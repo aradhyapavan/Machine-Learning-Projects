@@ -1,68 +1,37 @@
-# Customer-Churn-Prediction
+## Customer Churn Prediction for Savings Accounts
 
-<h3>Problem Statement:</h3></br>
-A Bank wants to take care of customer retention for their
-product; savings accounts. The bank wants you to identify
-customers likely to churn balances below the minimum
-balance in next quarter. You have the customers
-information such as age, gender, demographics along with
-their transactions with the bank. Your task as a data
-scientist would be to predict the propensity to churn for
-each customer.
+This project aims to develop a machine learning model for a bank to predict customer churn (falling below minimum balance in the next quarter) in their savings accounts. This will enable the bank to proactively engage with at-risk customers and implement retention strategies.
 
+### Problem Statement
 
-## Data Dictionary
+The bank lacks insight into which customers are likely to churn their savings accounts, leaving them exposed to lost revenue and customer relationships. This project intends to bridge this gap by building a robust model that accurately identifies potential churners based on relevant customer data.
 
-There are multiple variables in the dataset which can be cleanly divided in 3 categories:
+### Data Description
 
-### Demographic information about customers
+The provided dataset comprises diverse attributes across three categories:
 
-<b>customer_id</b> - Customer id
+* **Demographic:** Age, gender, dependents, occupation, city (anonymized).
+* **Customer-Bank Relationship:** Net worth category, branch code, days since last transaction.
+* **Transactional:** Current and previous balances, monthly balances (average and total), credit and debit amounts.
+* **Target:** Churn indicator (1: churn, 0: no churn) for the next quarter.
 
-<b>vintage</b> - Vintage of the customer with the bank in number of days
+### Key Steps
 
-<b>age</b> - Age of customer
+1. **Data Exploration and Cleaning:** Analyze data patterns, handle missing values, and address potential inconsistencies.
+2. **Feature Engineering:** Create new features from existing data to potentially improve model performance.
+3. **Model Selection and Training:** Evaluate and train various machine learning algorithms for churn prediction.
+4. **Model Evaluation:** Assess the model's accuracy, precision, recall, and other relevant metrics to choose the best performer.
+5. **Interpretability and Insights:** Identify key features influencing churn and provide insights for targeted retention strategies.
 
-<b>gender</b> - Gender of customer
+### Expected Outcomes
 
-<b>dependents</b> - Number of dependents
+* **Accurate churn prediction:** The model should effectively identify customers at high risk of falling below the minimum balance in the next quarter.
+* **Enhanced customer retention:** The bank can prioritize interventions and retention efforts towards potential churners.
+* **Improved customer understanding:** Insights gained from the model can inform product and service adjustments to better cater to customer needs and prevent churn.
 
-<b>occupation</b> - Occupation of the customer 
+### Further Information
 
-<b>city</b> - City of customer (anonymised)
-
-
-### Customer Bank Relationship
-
-
-<b>customer_nw_category</b> - Net worth of customer (3:Low 2:Medium 1:High)
-
-<b>branch_code</b> - Branch Code for customer account
-
-<b>days_since_last_transaction</b> - No of Days Since Last Credit in Last 1 year
+For detailed documentation and code specifics, please refer to the notebooks and scripts within the project repository.
 
 
-### Transactional Information
 
-<b>current_balance</b> - Balance as of today
-
-<b>previous_month_end_balance</b> - End of Month Balance of previous month
-
-
-<b>average_monthly_balance_prevQ</b> - Average monthly balances (AMB) in Previous Quarter
-
-<b>average_monthly_balance_prevQ2</b> - Average monthly balances (AMB) in previous to previous quarter
-
-<b>current_month_credit</b> - Total Credit Amount current month
-
-<b>previous_month_credit</b> - Total Credit Amount previous month
-
-<b>current_month_debit</b> - Total Debit Amount current month
-
-<b>previous_month_debit</b> - Total Debit Amount previous month
-
-<b>current_month_balance</b> - Average Balance of current month
-
-<b>previous_month_balance</b> - Average Balance of previous month
-
-<b>churn</b> - Average balance of customer falls below minimum balance in the next quarter (1/0)
