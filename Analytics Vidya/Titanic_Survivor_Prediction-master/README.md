@@ -1,4 +1,4 @@
-## Titanic_Survivor_Prediction: Predicting Survival on the Unsinkable Ship
+## Titanic Survivor Prediction: Predicting Survival on the Titanic Ship
 
 This repository houses the code and analysis for a Machine Learning project aimed at predicting the survival of passengers aboard the RMS Titanic. Explore the tragic incident through the lens of data science and build a model that sheds light on factors influencing survival rates.
 
