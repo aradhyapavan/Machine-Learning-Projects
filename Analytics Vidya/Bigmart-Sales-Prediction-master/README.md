@@ -41,7 +41,7 @@ The project is organized as follows:
 4. **Model Selection and Training**
 5. **Model Evaluation**
 6. **Hyperparameter Tuning**
-7.
+
 
 **## Further Information**
 
