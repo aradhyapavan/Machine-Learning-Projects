@@ -13,7 +13,7 @@ This repository houses the code and analysis for a project aimed at predicting t
 
 ## 🌐 Live Demo
 
-**Try the live application**: [🚢 Titanic Survival Predictor](https://huggingface.co/spaces/aradhyapavan/titanic-survival-predictor)
+**Try the live application**: [🚢 Titanic Survival Predictor](https://huggingface.co/spaces/aradhyapavan/Titanic_Survival_Predictor)
 
 ## 📊 Model Performance
 
